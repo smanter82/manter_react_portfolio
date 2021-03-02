@@ -1,0 +1,26 @@
+/*Added my own photo as backgrounds on index and contact files*/
+.backgroundPhoto {
+  background-image: url("../Images/tree_picture.png");
+}
+
+/*Move Navbar links to the right of the page.*/
+.linksRight {
+  justify-content: flex-end;
+}
+
+.padText {
+  padding: 25px;
+}
+
+/* .backgroundWhiteTrans {
+    background-color: rgb(245, 245, 245, 0.3);
+  } */
+
+.backgroundTransparent {
+  background-color: rgb(245, 245, 245, 0.5);
+}
+
+p {
+  font-weight: bold;
+  color: rgb(7, 41, 7);
+}
