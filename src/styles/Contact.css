@@ -2,7 +2,15 @@
   padding: 25px;
 }
 
-.centerItems {
-  display: flex;
-  justify-content: center;
+.grayCard {
+  background-color: rgb(245, 245, 245, 0.5);
+}
+
+.btn {
+  background: rgb(7, 41, 7) !important;
+  /* color: lightgray !important; */
+}
+
+.grayText {
+  color: lightgray !important;
 }

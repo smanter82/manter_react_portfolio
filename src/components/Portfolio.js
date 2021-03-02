@@ -8,13 +8,13 @@ import NoteTaker from "../Images/Screenshots/homeScreenshotNoteTaker.png";
 import WeatherDashboard from "../Images/Screenshots/weatherDashSS.png";
 // import Button from "react-bootstrap/Button";
 import portBackgroundImage from "../Images/tree_picture2.png";
-import { CardDeck } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 export default function Portfolio() {
   return (
     <div style={{ backgroundImage: `url(${portBackgroundImage})` }}>
-      <CardDeck>
-        <Card style={{ width: "18rem" }}>
+      <Row className="d-flex justify-content-center">
+        <Card className="mx-5 my-5" style={{ width: "30%" }}>
           <Card.Img variant="top" src={homePageGymApp} />
           <Card.Body>
             <Card.Title>Dev Fit Logistical Gym Tracker App</Card.Title>
@@ -40,7 +40,7 @@ export default function Portfolio() {
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card className="mx-5 my-5" style={{ width: "30%" }}>
           <Card.Img variant="top" src={HikerHelper} />
           <Card.Body>
             <Card.Title>Hiker Helper</Card.Title>
@@ -59,7 +59,9 @@ export default function Portfolio() {
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+      </Row>
+      <Row className="d-flex justify-content-center">
+        <Card className="mx-5 my-5" style={{ width: "30%" }}>
           <Card.Img variant="top" src={NoteTaker} />
           <Card.Body>
             <Card.Title>Note Taker App</Card.Title>
@@ -79,7 +81,7 @@ export default function Portfolio() {
             </Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card className="mx-5 my-5" style={{ width: "30%" }}>
           <Card.Img variant="top" src={WeatherDashboard} />
           <Card.Body>
             <Card.Title>Weather Dashboard</Card.Title>
@@ -100,7 +102,7 @@ export default function Portfolio() {
             </Card.Link>
           </Card.Body>
         </Card>
-      </CardDeck>
+      </Row>
     </div>
   );
 }

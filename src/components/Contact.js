@@ -13,9 +13,9 @@ export default function Contact() {
   return (
     <div style={{ backgroundImage: `url(${backgroundImage})` }}>
       <Container>
-        <Row className="align-items-flex-end">
-          <Card style={{ width: "75%" }}>
-            <Card.Body>
+        <Row>
+          <Card className="mx-auto my-2" style={{ width: "90%" }}>
+            <Card.Body className="grayCard">
               <Card.Title>
                 <h1>Contact Me:</h1>
               </Card.Title>
@@ -24,7 +24,7 @@ export default function Contact() {
                 <p className="padText">Email: sarahmanter@gmail.com</p>
                 <p className="padText">Phone: 603-496-4846</p>
               </Card.Text>
-              <Button variant="success">
+              <Button className="btn mx-5">
                 <Card.Link
                   target="blank"
                   href="https://www.linkedin.com/in/sarah-manter-40881877/"
@@ -32,13 +32,17 @@ export default function Contact() {
                   Here is my LinkedIn Profile.
                 </Card.Link>
               </Button>
-              <Button variant="success">
-                <Card.Link target="blank" href={Resume}>
+              <Button ClassName="btn mx-5">
+                <Card.Link ClassName="grayText" target="blank" href={Resume}>
                   My Resume
                 </Card.Link>
               </Button>
-              <Button variant="success">
-                <Card.Link target="blank" href="https://github.com/smanter82/">
+              <Button ClassName="btn mx-5">
+                <Card.Link
+                  ClassName="grayText"
+                  target="blank"
+                  href="https://github.com/smanter82/"
+                >
                   Here is my GitHub Repository.
                 </Card.Link>
               </Button>
