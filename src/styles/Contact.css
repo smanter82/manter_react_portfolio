@@ -1,0 +1,8 @@
+.padText {
+  padding: 25px;
+}
+
+.centerItems {
+  display: flex;
+  justify-content: center;
+}
