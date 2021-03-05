@@ -1,0 +1,17 @@
+.linksRight {
+  justify-content: flex-end;
+}
+
+.padText {
+  padding: 25px;
+}
+
+.card {
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+p,
+h5 {
+  font-weight: bold;
+  color: rgb(7, 41, 7);
+}

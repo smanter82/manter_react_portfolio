@@ -6,11 +6,22 @@
   background-color: rgb(245, 245, 245, 0.5);
 }
 
-.btn {
+.contactPage .btn {
   background: rgb(7, 41, 7) !important;
   /* color: lightgray !important; */
 }
 
 .grayText {
   color: lightgray !important;
+}
+
+.contactPage h1,
+.contactPage h2 {
+  color: rgb(7, 41, 7);
+}
+
+.contactPage .orangeText,
+.contactPage p {
+  color: #591200;
+  font-weight: bold;
 }

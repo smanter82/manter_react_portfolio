@@ -1,0 +1,12 @@
+.padText {
+  padding: 25px;
+}
+
+.backgroundTransparent {
+  background-color: rgb(245, 245, 245, 0.5);
+}
+
+p {
+  font-weight: bold;
+  color: rgb(7, 41, 7);
+}
