@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/HomePage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import profilePic from "../Images/profile_pic.jpg";
 import familyPic from "../Images/kids_on_bridge.jpg";
 import backgroundImage from "../Images/tree_picture.png";
@@ -12,7 +11,7 @@ import { Animated } from "react-animated-css";
 
 // Revise written piece
 // Finish or remove buttons
-// Add ReadMe
+// Finish ReadMe - Screenshots, links, etc.
 // Double Check online presence feedback on bootcampspot.
 
 export default function HomePage() {
@@ -38,7 +37,6 @@ export default function HomePage() {
                   am taking a coding course through UNH, and now I look forward
                   to using that passion in the world of Web Design.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </Animated>
@@ -59,7 +57,6 @@ export default function HomePage() {
                   practices learning to code on her own computer next to me
                   while I study.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </Animated>

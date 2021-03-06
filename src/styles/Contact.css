@@ -8,7 +8,6 @@
 
 .contactPage .btn {
   background: rgb(7, 41, 7) !important;
-  /* color: lightgray !important; */
 }
 
 .grayText {
@@ -24,4 +23,11 @@
 .contactPage p {
   color: #591200;
   font-weight: bold;
+}
+
+.contactPage {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

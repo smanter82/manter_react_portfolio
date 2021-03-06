@@ -15,28 +15,22 @@ import FitnessTracker from "../Images/Screenshots/fitTrackerScreenshot1.png";
 import { Animated } from "react-animated-css";
 import Col from "react-bootstrap/Col";
 
-// Don't forget to fix card size on larger screens - REM vs % vs px??
-// Finish styling buttons
-
 export default function Portfolio() {
   return (
     <>
       <Navbar></Navbar>
       <div
-        className="backgroundStyle"
+        className="portfolioPage"
         style={{ backgroundImage: `url(${portBackgroundImage})` }}
       >
         <Row className="d-flex justify-content-center">
-          <Col className="d-flex justify-content-center">
+          <Col className="d-flex justify-content-center align-items-stretch">
             <Animated
               animationIn="rotateInDownLeft"
               animationOut="fadeOut"
               isVisible={true}
             >
-              <Card
-                className=" ml-auto mr-5 my-5"
-                style={{ width: "75%", height: "50rem" }}
-              >
+              <Card className=" ml-auto mr-5 my-5" style={{ width: "75%" }}>
                 <Card.Img variant="top" src={homePageGymApp} />
                 <Card.Body>
                   <Card.Title>Dev Fit Logistical Gym Tracker App</Card.Title>
@@ -57,15 +51,24 @@ export default function Portfolio() {
                   </Card.Text>
                 </Card.Body>
                 <Card.Body>
-                  <Card.Link href="https://gym-logistical-tracker-duex.herokuapp.com/">
-                    Deployed App
-                  </Card.Link>
-                  <Card.Link
-                    className="linksRight d-flex"
-                    href="https://github.com/smanter82/Gym-Logistical-Tracker"
-                  >
-                    GitHub Repository
-                  </Card.Link>
+                  <Button className="mr-5">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://gym-logistical-tracker-duex.herokuapp.com/"
+                    >
+                      Deployed App
+                    </Card.Link>
+                  </Button>
+                  <Button className="ml-5">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://github.com/smanter82/Gym-Logistical-Tracker"
+                    >
+                      GitHub Repository
+                    </Card.Link>
+                  </Button>
                 </Card.Body>
               </Card>
             </Animated>
@@ -76,10 +79,7 @@ export default function Portfolio() {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <Card
-                className="mr-auto ml-5 my-5"
-                style={{ width: "75%", height: "50rem" }}
-              >
+              <Card className="mr-auto ml-5 my-5" style={{ width: "75%" }}>
                 <Card.Img variant="top" src={HikerHelper} />
                 <Card.Body>
                   <Card.Title>Hiker Helper</Card.Title>
@@ -93,15 +93,24 @@ export default function Portfolio() {
                   </Card.Text>
                 </Card.Body>
                 <Card.Body>
-                  <Card.Link href="https://smanter82.github.io/HikerHelper/">
-                    Deployed App
-                  </Card.Link>
-                  <Card.Link
-                    className="linksRight d-flex"
-                    href="https://github.com/smanter82/HikerHelper"
-                  >
-                    GitHub Repository
-                  </Card.Link>
+                  <Button className="mr-5">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://smanter82.github.io/HikerHelper/"
+                    >
+                      Deployed App
+                    </Card.Link>
+                  </Button>
+                  <Button className="ml-5">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://github.com/smanter82/HikerHelper"
+                    >
+                      GitHub Repository
+                    </Card.Link>
+                  </Button>
                 </Card.Body>
               </Card>
             </Animated>
@@ -114,10 +123,7 @@ export default function Portfolio() {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <Card
-                className=" ml-auto mr-5 my-5"
-                style={{ width: "75%", height: "40rem" }}
-              >
+              <Card className=" ml-auto mr-5 my-5" style={{ width: "75%" }}>
                 <Card.Img variant="top" src={NoteTaker} />
                 <Card.Body>
                   <Card.Title>Note Taker App</Card.Title>
@@ -131,14 +137,19 @@ export default function Portfolio() {
                   </Card.Text>
                 </Card.Body>
                 <Card.Body className="d-flex justify-content-center">
-                  <Button>
-                    <Card.Link href="https://smanter82-note-taker.herokuapp.com/">
+                  <Button className="mr-5">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://smanter82-note-taker.herokuapp.com/"
+                    >
                       Deployed App
                     </Card.Link>
                   </Button>
-                  <Button>
+                  <Button className="ml-5">
                     <Card.Link
-                      className="linksRight d-flex"
+                      className="grayText"
+                      target="blank"
                       href="https://github.com/smanter82/NoteTaker"
                     >
                       GitHub Repository
@@ -154,10 +165,7 @@ export default function Portfolio() {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <Card
-                className="mr-auto ml-5 my-5"
-                style={{ width: "75%", height: "40rem" }}
-              >
+              <Card className="mr-auto ml-5 my-5" style={{ width: "75%" }}>
                 <Card.Img variant="top" src={WeatherDashboard} />
                 <Card.Body>
                   <Card.Title>Weather Dashboard</Card.Title>
@@ -174,12 +182,20 @@ export default function Portfolio() {
                 </Card.Body>
                 <Card.Body className="d-flex justify-content-center">
                   <Button className="mr-5">
-                    <Card.Link href="https://smanter82.github.io/WeatherDashboard/">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://smanter82.github.io/WeatherDashboard/"
+                    >
                       Deployed App
                     </Card.Link>
                   </Button>
                   <Button className="ml-5">
-                    <Card.Link href="https://github.com/smanter82/WeatherDashboard">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://github.com/smanter82/WeatherDashboard"
+                    >
                       GitHub Repository
                     </Card.Link>
                   </Button>
@@ -195,10 +211,7 @@ export default function Portfolio() {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <Card
-                className=" ml-auto mr-5 my-5"
-                style={{ width: "75%", height: "40rem" }}
-              >
+              <Card className=" ml-auto mr-5 my-5" style={{ width: "75%" }}>
                 <Card.Img variant="top" src={EmployeeTracker} />
                 <Card.Body>
                   <Card.Title>Employee Tracker</Card.Title>
@@ -216,14 +229,19 @@ export default function Portfolio() {
                   </Card.Text>
                 </Card.Body>
                 <Card.Body className="d-flex justify-content-center">
-                  <Button>
-                    <Card.Link href="https://drive.google.com/file/d/16wwgFVk9jyKBXV1mMqtB14lKW2YhFheA/view">
+                  <Button className="mr-5">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://drive.google.com/file/d/16wwgFVk9jyKBXV1mMqtB14lKW2YhFheA/view"
+                    >
                       Walkthrough Video
                     </Card.Link>
                   </Button>
-                  <Button>
+                  <Button className="ml-5">
                     <Card.Link
-                      className="linksRight d-flex"
+                      className="grayText"
+                      target="blank"
                       href="https://github.com/smanter82/EmployeeTracker"
                     >
                       GitHub Repository
@@ -239,10 +257,7 @@ export default function Portfolio() {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <Card
-                className="mr-auto ml-5 my-5"
-                style={{ width: "75%", height: "40rem" }}
-              >
+              <Card className="mr-auto ml-5 my-5" style={{ width: "75%" }}>
                 <Card.Img variant="top" src={FitnessTracker} />
                 <Card.Body>
                   <Card.Title>Fitness tracker</Card.Title>
@@ -261,12 +276,20 @@ export default function Portfolio() {
                 </Card.Body>
                 <Card.Body className="d-flex justify-content-center">
                   <Button className="mr-5">
-                    <Card.Link href="https://smanter82-fitness-tracker-app.herokuapp.com/?id=6025ef756384540015751e41">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://smanter82-fitness-tracker-app.herokuapp.com/?id=6025ef756384540015751e41"
+                    >
                       Deployed App
                     </Card.Link>
                   </Button>
                   <Button className="ml-5">
-                    <Card.Link href="https://github.com/smanter82/Fitness_tracker">
+                    <Card.Link
+                      className="grayText"
+                      target="blank"
+                      href="https://github.com/smanter82/Fitness_tracker"
+                    >
                       GitHub Repository
                     </Card.Link>
                   </Button>

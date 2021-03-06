@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Manter_React_Portfolio
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/${data.projectLicense})
+
+Sarah Manter's React Portfolio
+
+## Introduction
+
+Hello!
+
+I am a full-stack web developer, taking advantage of my experience as a teacher and transferring strong skills in organization, planning, flexibility, and effective, patient communication to a career in web development. I welcome the challenge and computer oriented nature of coding. I currently have a base in working with HTML, CSS, JavaScript, and JQuery, as well as working with data from third-party API's. I am familiar with libraries such as Bootstrap, React-Bootstrap, and Animate.css, and I’m looking forward to learning more. I’ve recently worked with a strong 4 person team to create a gym logistical tracker app using MySql and Sequelize, and we are working on refactoring it using React, Mongo, and Mongoose. I am looking forward to the completion of the UNH Coding Bootcamp at the end of this month.
+
+[Deployed Portfolio Site](link here)
+
+## Table of Contents
+
+- [Screenshots](#Screenshots)
+- [Technologies](#Technologies)
+- [Contact](#Contact)
+- [Resume](#Resume)
+
+## Screenshots
+
+<!-- Fix screenshots when complete -->
+
+![HomePage](./Assets/Images/Screenshots/homePageScreenshot.png)
+
+![Portfolio](./Assets/Images/Screenshots/portfolioScreenshot.png)
+
+![Contact](./Assets/Images/Screenshots/contactScreenshot.png)
+
+## Technologies
+
+So far, I have learned to work with HTML, CSS, JavaScript, JQuery, and using AJAX calls to work with data from third-party API's. I'm also familiar with Node.js, Express, MySql, Sequelize, MongoDB, Mongoose, and React. I have worked with Bootstrap, React-Bootstrap, Animate.css, and react-animated-css.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Contact
 
-In the project directory, you can run:
+Contact me through GitHub or by email.
 
-### `npm start`
+- [GitHub](https://github.com/smanter82)
+- [LinkedIn](https://www.linkedin.com/in/sarah-manter-40881877/)
+- Email: sarahmanter@gmail.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Resume
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Resume: [PDF](/src/Images/Sarah_Manter_Resume.pdf)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
