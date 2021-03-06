@@ -23,7 +23,7 @@ I am a full-stack web developer, taking advantage of my experience as a teacher 
 
 ![HomePage](/src/Images/Screenshots/homePageScreenshot.png)
 
-![Portfolio](/src/Images/Screenshots/contactPageScreenshot.png)
+![Portfolio](/src/Images/Screenshots/portfolioPageScreenshots.png)
 
 ![Contact](/src/Images/Screenshots/contactPageScreenshot.png)
 
