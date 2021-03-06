@@ -10,6 +10,8 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Navbar from "../components/Navbar";
 
+//Get contact form working with database
+
 export default function Contact() {
   return (
     <>

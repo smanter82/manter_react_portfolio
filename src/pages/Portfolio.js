@@ -15,6 +15,9 @@ import FitnessTracker from "../Images/Screenshots/fitTrackerScreenshot1.png";
 import { Animated } from "react-animated-css";
 import Col from "react-bootstrap/Col";
 
+// Don't forget to fix card size on larger screens - REM vs % vs px??
+// Finish styling buttons
+
 export default function Portfolio() {
   return (
     <>

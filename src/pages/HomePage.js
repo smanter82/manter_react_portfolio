@@ -10,6 +10,11 @@ import Row from "react-bootstrap/Row";
 import Navbar from "../components/Navbar";
 import { Animated } from "react-animated-css";
 
+// Revise written piece
+// Finish or remove buttons
+// Add ReadMe
+// Double Check online presence feedback on bootcampspot.
+
 export default function HomePage() {
   return (
     <>
