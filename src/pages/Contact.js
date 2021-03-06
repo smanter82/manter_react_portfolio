@@ -7,11 +7,9 @@ import Button from "react-bootstrap/Button";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
 import backgroundImage from "../Images/tree_picture.png";
 import Row from "react-bootstrap/Row";
-// import Container from "react-bootstrap/Container";
 import Navbar from "../components/Navbar";
 
-//Get contact form working with database
-//Figure out why space at bottom on large monitor
+//Add functionality of Contact form with MongoDB stitch Webhooks??
 
 export default function Contact() {
   return (

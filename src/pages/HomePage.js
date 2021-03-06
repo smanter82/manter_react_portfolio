@@ -9,10 +9,7 @@ import Row from "react-bootstrap/Row";
 import Navbar from "../components/Navbar";
 import { Animated } from "react-animated-css";
 
-// Revise written piece
-// Finish or remove buttons
-// Finish ReadMe - Screenshots, links, etc.
-// Double Check online presence feedback on bootcampspot.
+//Add technologies icons to be employer-competitive
 
 export default function HomePage() {
   return (

@@ -21,13 +21,11 @@ I am a full-stack web developer, taking advantage of my experience as a teacher 
 
 ## Screenshots
 
-<!-- Fix screenshots when complete -->
+![HomePage](/src/Images/Screenshots/homePageScreenshot.png)
 
-![HomePage](./Assets/Images/Screenshots/homePageScreenshot.png)
+![Portfolio](/src/Images/Screenshots/contactPageScreenshot.png)
 
-![Portfolio](./Assets/Images/Screenshots/portfolioScreenshot.png)
-
-![Contact](./Assets/Images/Screenshots/contactScreenshot.png)
+![Contact](/src/Images/Screenshots/contactPageScreenshot.png)
 
 ## Technologies
 
