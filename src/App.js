@@ -3,6 +3,7 @@ import Contact from "./pages/Contact";
 import HomePage from "./pages/HomePage";
 import Portfolio from "./pages/Portfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
