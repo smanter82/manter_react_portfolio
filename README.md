@@ -10,7 +10,7 @@ Hello!
 
 I am a full-stack web developer, taking advantage of my experience as a teacher and transferring strong skills in organization, planning, flexibility, and effective, patient communication to a career in web development. I welcome the challenge and computer oriented nature of coding. I currently have a base in working with HTML, CSS, JavaScript, and JQuery, as well as working with data from third-party API's. I am familiar with libraries such as Bootstrap, React-Bootstrap, and Animate.css, and I’m looking forward to learning more. I’ve recently worked with a strong 4 person team to create a gym logistical tracker app using MySql and Sequelize, and we are working on refactoring it using React, Mongo, and Mongoose. I am looking forward to the completion of the UNH Coding Bootcamp at the end of this month.
 
-[Deployed Portfolio Site](link here)
+[Deployed Portfolio Site](https://manter-react-portfolio.herokuapp.com/)
 
 ## Table of Contents
 
