@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Resume from "../Images/Sarah_Manter_Resume.pdf";
-import backgroundImage from "../Images/tree_picture.png";
 import Row from "react-bootstrap/Row";
 import Navbar from "../components/Navbar";
+import backgroundImage from "../Images/tree_picture.png";
+import Resume from "../Images/Sarah_Manter_Resume.pdf";
 
 //Add functionality of Contact form with MongoDB stitch Webhooks??
 
@@ -17,7 +17,9 @@ export default function Contact() {
       <Navbar></Navbar>
       <div
         className="contactPage"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
       >
         <Row>
           <Card className="mx-auto my-2 " style={{ width: "90%" }}>

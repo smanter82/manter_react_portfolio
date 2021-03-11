@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/HomePage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
-import profilePic from "../Images/profile_pic.jpg";
-import familyPic from "../Images/kids_on_bridge.jpg";
-import backgroundImage from "../Images/tree_picture.png";
 import Row from "react-bootstrap/Row";
 import Navbar from "../components/Navbar";
 import { Animated } from "react-animated-css";
+import backgroundImage from "../Images/tree_picture.png";
+import profilePic from "../Images/profile_pic.jpg";
+import familyPic from "../Images/kids_on_bridge.jpg";
 
 //Add technologies icons to be employer-competitive
 
@@ -15,7 +15,11 @@ export default function HomePage() {
   return (
     <>
       <Navbar></Navbar>
-      <div style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
+      >
         <Row className="d-flex justify-content-center">
           <Animated
             animationIn="bounceInLeft"

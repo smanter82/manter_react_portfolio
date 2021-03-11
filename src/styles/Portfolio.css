@@ -21,3 +21,7 @@ h5 {
   color: rgba(245, 245, 245, 0.5) i !important;
   border: 2px rgb !important;
 }
+
+.portfolioPage {
+  background-image: url("../Images/tree_picture.png");
+}
