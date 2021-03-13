@@ -11,6 +11,7 @@ import EmployeeTracker from "../Images/Screenshots/addDepScreen.png";
 import FitnessTracker from "../Images/Screenshots/fitTrackerScreenshot1.png";
 import { Animated } from "react-animated-css";
 import ProjectCard from "../components/ProjectCard";
+import { Container } from "react-bootstrap";
 
 export default function Portfolio() {
   const cardInfo = [
@@ -87,13 +88,15 @@ export default function Portfolio() {
           backgroundImage: `url(${portBackgroundImage})`,
         }}
       >
-        {cardInfo.map((info) => (
-          <Animated
-            animationIn="rotateInDownLeft"
-            animationOut="fadeOut"
-            isVisible={true}
-          >
+        <Container className="portfolioContainer d-flex">
+          {cardInfo.map((info) => (
+            // <Animated
+            //   animationIn="fadeIn"
+            //   animationOut="fadeOut"
+            //   isVisible={true}
+            // >
             <ProjectCard
+              key={info.id}
               body={info.body}
               technologies={info.technologies}
               title={info.title}
@@ -101,8 +104,9 @@ export default function Portfolio() {
               gitHubLink={info.gitHubLink}
               photo={info.photo}
             ></ProjectCard>
-          </Animated>
-        ))}
+            // </Animated>
+          ))}
+        </Container>
       </div>
     </>
   );

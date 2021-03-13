@@ -25,3 +25,9 @@ h5 {
 .portfolioPage {
   background-image: url("../Images/tree_picture.png");
 }
+
+.portfolioContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
