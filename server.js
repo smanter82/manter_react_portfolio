@@ -1,6 +1,8 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
+const apiRoutes = require("./routes/api.js");
+// const connectDB = require("./config");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -14,19 +16,20 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+// connectDB();
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/portfolioContact",
   {
-    useUnifiedTopology: true,
     useNewUrlParser: true,
+    useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false,
   }
 );
-
 // routes
-// app.use(require("./routes/api.js"));
-app.get("*", (req, res) => {
+app.use("/api", apiRoutes);
+
+app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
