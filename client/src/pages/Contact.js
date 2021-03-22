@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "../styles/Contact.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Navbar from "../components/Navbar";
+import "../styles/Contact.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import backgroundImage from "../Images/tree_picture.png";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
 
@@ -24,6 +24,7 @@ export default function Contact() {
     });
   };
   const handleMessageSubmit = () => {
+    console.log("button clicked");
     fetch("/api/message", {
       method: "POST",
       headers: {
@@ -33,7 +34,7 @@ export default function Contact() {
     })
       .then((response) => response.json())
       .then(() => {
-        console.log("Message sent!");
+        alert("Message sent!");
       })
       .catch((error) => {
         alert("Error: Something went wrong.  Please try again.");
@@ -93,7 +94,7 @@ export default function Contact() {
               </Button>
             </Card.Body>
             <Card.Body>
-              <Form>
+              <Form onSubmit={handleMessageSubmit}>
                 <Form.Group controlId="contactName">
                   <Form.Label className="orangeText">Name</Form.Label>
                   <Form.Control
@@ -102,6 +103,7 @@ export default function Contact() {
                     placeholder="Your Name Here"
                     onChange={(event) => setMessageState(event)}
                     name="contact_name"
+                    value={messages.contact_name}
                   />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlInput1">
@@ -112,6 +114,7 @@ export default function Contact() {
                     placeholder="name@example.com"
                     onChange={(event) => setMessageState(event)}
                     name="email"
+                    value={messages.email}
                   />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -122,12 +125,13 @@ export default function Contact() {
                     placeholder="Please type a short message here."
                     onChange={(event) => setMessageState(event)}
                     name="message"
+                    value={messages.message}
                   />
                 </Form.Group>
+                <Button type="submit" variant="primary">
+                  Submit
+                </Button>
               </Form>
-              <Button variant="primary" onClick={handleMessageSubmit()}>
-                Submit
-              </Button>
             </Card.Body>
           </Card>
         </Row>
