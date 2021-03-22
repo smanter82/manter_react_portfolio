@@ -35,10 +35,10 @@ export default function Contact() {
       .then((response) => response.json())
       .then(() => {
         alert("Message sent!");
-      })
-      .catch((error) => {
-        alert("Error: Something went wrong.  Please try again.");
       });
+    // .catch((error) => {
+    //   alert("Error: Something went wrong.  Please try again.");
+    // });
   };
 
   return (
