@@ -23,8 +23,9 @@ export default function Contact() {
       [name]: value,
     });
   };
-  const handleMessageSubmit = () => {
+  const handleMessageSubmit = (event) => {
     console.log("button clicked");
+    event.preventDefault();
     fetch("/api/message", {
       method: "POST",
       headers: {
