@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "../styles/Contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "react-bootstrap/Form";
@@ -9,9 +9,37 @@ import Navbar from "../components/Navbar";
 import backgroundImage from "../Images/tree_picture.png";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
 
-//Add functionality of Contact form with MongoDB stitch Webhooks??
-
 export default function Contact() {
+  const [messages, setMessages] = useState({
+    contact_name: "",
+    email: "",
+    message: "",
+  });
+
+  const setMessageState = (event) => {
+    const { name, value } = event.target;
+    setMessages({
+      ...messages,
+      [name]: value,
+    });
+  };
+  const handleMessageSubmit = () => {
+    fetch("/api/message", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(messages),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log("Message sent!");
+      })
+      .catch((error) => {
+        alert("Error: Something went wrong.  Please try again.");
+      });
+  };
+
   return (
     <>
       <Navbar></Navbar>
@@ -66,20 +94,40 @@ export default function Contact() {
             </Card.Body>
             <Card.Body>
               <Form>
-                <Form.Group controlId="exampleForm.ControlInput1">
+                <Form.Group controlId="contactName">
                   <Form.Label className="orangeText">Name</Form.Label>
-                  <Form.Control type="name" placeholder="Your Name Here" />
+                  <Form.Control
+                    required
+                    type="text"
+                    placeholder="Your Name Here"
+                    onChange={(event) => setMessageState(event)}
+                    name="contact_name"
+                  />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlInput1">
                   <Form.Label className="orangeText">Email address</Form.Label>
-                  <Form.Control type="email" placeholder="name@example.com" />
+                  <Form.Control
+                    required
+                    type="email"
+                    placeholder="name@example.com"
+                    onChange={(event) => setMessageState(event)}
+                    name="email"
+                  />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   <Form.Label className="orangeText">Message</Form.Label>
-                  <Form.Control as="textarea" rows={3} />
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    placeholder="Please type a short message here."
+                    onChange={(event) => setMessageState(event)}
+                    name="message"
+                  />
                 </Form.Group>
               </Form>
-              <Button variant="primary">Submit</Button>
+              <Button variant="primary" onClick={handleMessageSubmit()}>
+                Submit
+              </Button>
             </Card.Body>
           </Card>
         </Row>

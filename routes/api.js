@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const db = require("../models");
+const db = require("../models/");
 
-router.post((req, res) => {
+router.route("/message").post((req, res) => {
   const newMessages = new db.Messages({
     contact_name: req.body.contact_name,
     email: req.body.email,
