@@ -2,14 +2,15 @@ import React from "react";
 import "../styles/Portfolio.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePageGymApp from "../Images/Screenshots/homePage-gymApp.png";
+import homePage from "../Images/Screenshots/homePage.png";
 import HikerHelper from "../Images/Screenshots/hikerHelper_screenshot2.png";
 import NoteTaker from "../Images/Screenshots/homeScreenshotNoteTaker.png";
 import WeatherDashboard from "../Images/Screenshots/weatherDashSS.png";
 import portBackgroundImage from "../Images/tree_picture.png";
 import Navbar from "../components/Navbar";
 import EmployeeTracker from "../Images/Screenshots/addDepScreen.png";
-import FitnessTracker from "../Images/Screenshots/fitTrackerScreenshot1.png";
-import { Animated } from "react-animated-css";
+
+// import { Animated } from "react-animated-css";
 import ProjectCard from "../components/ProjectCard";
 import { Container } from "react-bootstrap";
 
@@ -18,12 +19,13 @@ export default function Portfolio() {
     {
       id: 1,
       body:
-        "This is a gym tracker app which allows clients to create accounts, log in with existing accounts, see trainer information, and view and join classes. It also allows trainers to add or remove their own classes. Managers on this app are able to view a list of trainers employed by the gym, pull up an individual trainer's information, terminate a trainer's employment by removing that trainer from the database, or hire a new trainer by adding his/her information into the database. A manager can also view all classes available at the gym for the week, view class rosters, and add/remove members from class rosters.",
-      technologies: "node.js, express, MySql, Sequelize, Bootstrap",
+        "This is a gym tracker app which allows clients to create accounts, log in with existing accounts, see trainer information, view and join classes, and shop the Dev Fit store. It also allows trainers to add or remove their own classes. Managers on this app are able to view a list of trainers employed by the gym, pull up an individual trainer's information, terminate a trainer's employment by removing that trainer from the database, or hire a new trainer by adding his/her information into the database. A manager can also view all classes available at the gym for the week, view class rosters, and add/remove members from class rosters.",
+      technologies:
+        "React, node.js, Auth0, express, AtlasDB, MongoDb, Mongoose, nodemon, date-fns, Heroku, react-bootstrap, PayPal",
       title: "Dev Fit Logistical Gym Tracker App",
-      deployedLink: "https://gym-logistical-tracker-duex.herokuapp.com/",
-      gitHubLink: "https://github.com/smanter82/Gym-Logistical-Tracker",
-      photo: HomePageGymApp,
+      deployedLink: "https://dev-fit-gym-app.herokuapp.com/",
+      gitHubLink: "https://github.com/smanter82/Devfit",
+      photo: homePage,
     },
     {
       id: 2,
@@ -69,13 +71,12 @@ export default function Portfolio() {
     {
       id: 6,
       body:
-        "This is a workout tracker which will allow a user to view,create, and track daily workouts. The user will also be able to log multiple exercises in a workout on a given day and track the name, type, weight, sets, reps, and duration of exercise. If the exercise is cardio, the user will be able to track the distance traveled. The app will allow users to reach their fitness goals more quickly by tracking their workout progress.",
-      technologies: "Mongo, Mongoose",
-      title: "Fitness tracker",
-      deployedLink:
-        "https://smanter82-fitness-tracker-app.herokuapp.com/?id=6025ef756384540015751e41",
-      gitHubLink: "https://github.com/smanter82/Fitness_tracker",
-      photo: FitnessTracker,
+        "This is our original gym tracker app, which allows clients, trainers, and managers to log into their accounts and be transferred to their respective pages to access information and functionality specific to their roles. It has since been refactored into React and MongoDB.",
+      technologies: "node.js, express, MySql, Sequelize, Bootstrap",
+      title: "Dev Fit Logistical Gym Tracker App",
+      deployedLink: "https://gym-logistical-tracker-duex.herokuapp.com/",
+      gitHubLink: "https://github.com/smanter82/Gym-Logistical-Tracker",
+      photo: HomePageGymApp,
     },
   ];
 
