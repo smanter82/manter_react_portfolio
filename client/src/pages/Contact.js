@@ -1,15 +1,21 @@
 import { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
+import { Form, Card, Button, Row, Modal } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import "../styles/Contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import backgroundImage from "../Images/tree_picture.png";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
+// import AlertModal from "../components/AlertModal";
+import { Redirect } from "react-router";
 
 export default function Contact() {
+  const [refresh, setRefresh] = useState();
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const onModalClose = () => {
+    handleClose();
+    setRefresh(<Redirect to={`/`} />);
+  };
   const [messages, setMessages] = useState({
     contact_name: "",
     email: "",
@@ -35,7 +41,7 @@ export default function Contact() {
     })
       .then((response) => response.json())
       .then(() => {
-        alert("Message sent!");
+        setShow(true);
       })
       .catch((error) => {
         alert("Error: Something went wrong.  Please try again.");
@@ -137,6 +143,18 @@ export default function Contact() {
           </Card>
         </Row>
       </div>
+      <Modal show={show}>
+        <Modal.Header closeButton>
+          <Modal.Title>Message sent!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Thank you for contacting me. I'll be in touch soon.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={onModalClose}>Close</Button>
+          {refresh ? refresh : null}
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
