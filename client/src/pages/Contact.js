@@ -50,13 +50,13 @@ export default function Contact() {
 
   return (
     <>
-      <Navbar></Navbar>
       <div
         className="contactPage"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
       >
+        <Navbar></Navbar>
         <Row>
           <Card className="mx-auto my-2 " style={{ width: "90%" }}>
             <Card.Body className="grayCard d-flex justify-content-center">

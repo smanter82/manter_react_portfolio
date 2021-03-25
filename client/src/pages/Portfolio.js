@@ -82,13 +82,13 @@ export default function Portfolio() {
 
   return (
     <>
-      <Navbar></Navbar>
       <div
         className="portfolioPage"
         style={{
           backgroundImage: `url(${portBackgroundImage})`,
         }}
       >
+        <Navbar></Navbar>
         <Container className="portfolioContainer d-flex">
           {cardInfo.map((info) => (
             // <Animated

@@ -1,8 +1,10 @@
 .nameStyle {
-  font-size: 40px;
+  font-size: 40px !important;
   color: rgb(7, 41, 7) !important;
+  font-weight: bold;
 }
 
 .greenLinks {
   color: rgb(3, 65, 3) !important;
+  font-size: 20px;
 }

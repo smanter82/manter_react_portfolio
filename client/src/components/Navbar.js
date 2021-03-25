@@ -5,11 +5,11 @@ import "../styles/Navbar.css";
 export default function PortfolioNavbar() {
   return (
     <>
-      <Navbar bg="light" variant="light">
-        <Navbar.Brand className="nameStyle" href="/">
+      <Navbar>
+        <Navbar.Brand className="nameStyle px-4" href="/">
           Sarah Manter
         </Navbar.Brand>
-        <Nav className="ml-auto">
+        <Nav className="ml-auto px-4">
           <Nav.Link className="greenLinks" href="/">
             Home Page
           </Nav.Link>

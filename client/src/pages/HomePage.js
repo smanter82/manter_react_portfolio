@@ -8,18 +8,19 @@ import { Animated } from "react-animated-css";
 import backgroundImage from "../Images/tree_picture.png";
 import profilePic from "../Images/profile_pic.jpg";
 import familyPic from "../Images/kids_on_bridge.jpg";
+// import IconHtml5 from "react-devicon/html5/plain";
 
 //Add technologies icons to be employer-competitive
 
 export default function HomePage() {
   return (
     <>
-      <Navbar></Navbar>
       <div
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
       >
+        <Navbar className="homeNav"></Navbar>
         <Row className="d-flex justify-content-center">
           <Animated
             animationIn="bounceInLeft"
@@ -62,6 +63,15 @@ export default function HomePage() {
             </Card>
           </Animated>
         </Row>
+        <div className="footer-background py-3 d-flex justify-content-center">
+          <i class="devicon-html5-plain-wordmark colored mx-2"></i>
+          <i class="devicon-css3-plain-wordmark colored mx-2"></i>
+          <i class="devicon-javascript-plain colored mx-2"></i>
+          <i class="devicon-express-original-wordmark colored mx-2"></i>
+          <i class="devicon-git-plain-wordmark colored mx-2"></i>
+          <i class="devicon-github-original-wordmark colored mx-2"></i>
+          <i class="devicon-heroku-plain-wordmark colored mx-2"></i>
+        </div>
       </div>
     </>
   );
