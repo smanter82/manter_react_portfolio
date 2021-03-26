@@ -5,7 +5,6 @@ import "../styles/Contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import backgroundImage from "../Images/tree_picture.png";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
-// import AlertModal from "../components/AlertModal";
 import { Redirect } from "react-router";
 
 export default function Contact() {
@@ -80,7 +79,7 @@ export default function Contact() {
                 <Card.Link
                   className="grayText"
                   target="blank"
-                  href="https://www.linkedin.com/in/sarah-manter-40881877/"
+                  href="https://www.linkedin.com/in/sarahmanter/"
                 >
                   Here is my LinkedIn Profile.
                 </Card.Link>
