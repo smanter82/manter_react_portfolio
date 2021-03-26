@@ -71,6 +71,11 @@ export default function HomePage() {
           <i class="devicon-git-plain-wordmark colored mx-2"></i>
           <i class="devicon-github-original-wordmark colored mx-2"></i>
           <i class="devicon-heroku-plain-wordmark colored mx-2"></i>
+          <i class="devicon-react-original-wordmark colored mx-2"></i>
+          <i class="devicon-mysql-plain-wordmark colored mx-2"></i>
+          <i class="devicon-mongodb-plain-wordmark colored mx-2"></i>
+          <i class="devicon-visualstudio-plain colored mx-2"></i>
+          <i class="devicon-webpack-plain colored mx-2"></i>
         </div>
       </div>
     </>
