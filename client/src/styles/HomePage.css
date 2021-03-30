@@ -18,9 +18,32 @@ i {
   background: transparent !important;
 }
 
-.homePage {
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@media screen and (max-width: 992) {
+  .profilePic {
+    width: 5rem !important;
+  }
+  .familyPic {
+    width: 5rem !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 640px and up) */
+@media only screen and (max-width: 991px) {
+  .homePage {
+    background-image: url(../Images/wallpaper2you_188587.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 992px) {
+  .homePage {
+    background-image: url(../Images/tree_picture.png);
+    background-size: stretch;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
 }

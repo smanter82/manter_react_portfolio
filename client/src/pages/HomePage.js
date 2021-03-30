@@ -4,31 +4,33 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Container, Col } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import { Animated } from "react-animated-css";
-import backgroundImage from "../Images/tree_picture.png";
 import profilePic from "../Images/profile_pic.jpg";
 import familyPic from "../Images/kids_on_bridge.jpg";
 
 export default function HomePage() {
   return (
     <>
-      <div
-        className="homePage"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-        }}
-      >
+      <div className="homePage justify-content-center">
         <Navbar className="homeNav"></Navbar>
-        <Container className="d-flex justify-content-center">
-          <Row>
-            <Col sm={6} className="d-flex justify-content-center mx-auto">
+        <Container className="d-flex align-items-center">
+          <Row className="d-flex">
+            <Col
+              sm={12}
+              lg={6}
+              className="d-flex justify-content-center mx-auto"
+            >
               <Container>
                 <Animated
                   animationIn="bounceInLeft"
                   animationOut="fadeOut"
                   isVisible={true}
                 >
-                  <Card className="mx-5 my-5" style={{ width: "30rem" }}>
-                    <Card.Img variant="top" src={profilePic} />
+                  <Card className="mx-auto my-5" style={{ width: "30rem" }}>
+                    <Card.Img
+                      className="profilePic"
+                      variant="top"
+                      src={profilePic}
+                    />
                     <Card.Body>
                       <Card.Title>About Me:</Card.Title>
                       <Card.Text>
@@ -45,15 +47,23 @@ export default function HomePage() {
                 </Animated>
               </Container>
             </Col>
-            <Col sm={6}>
+            <Col
+              sm={12}
+              lg={6}
+              className="d-flex justify-content-center mx-auto"
+            >
               <Container>
                 <Animated
                   animationIn="bounceInRight"
                   animationOut="fadeOut"
                   isVisible={true}
                 >
-                  <Card className="mx-5 my-5" style={{ width: "30rem" }}>
-                    <Card.Img variant="top" src={familyPic} />
+                  <Card className="mx-auto my-5" style={{ width: "30rem" }}>
+                    <Card.Img
+                      className="familyPic"
+                      variant="top"
+                      src={familyPic}
+                    />
                     <Card.Body>
                       <Card.Title>My family</Card.Title>
                       <Card.Text>
