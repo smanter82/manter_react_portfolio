@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
+import "./projectCard.css";
 import "../styles/Portfolio.css";
 
 function ProjectCard(props) {
   return (
-    <Card className="my-5 mx-2" style={{ width: "48%" }}>
+    <Card className="my-5 mx-2 projectCard">
       <Card.Img variant="top" src={props.photo} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
