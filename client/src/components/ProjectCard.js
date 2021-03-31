@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./projectCard.css";
-import "../styles/Portfolio.css";
+import { Row } from "react-bootstrap";
 
 function ProjectCard(props) {
   return (
@@ -16,25 +16,27 @@ function ProjectCard(props) {
           Technologies: {props.technologies}
         </Card.Text>
       </Card.Body>
-      <Card.Body className="justify-content-center">
-        <Button className="mr-2">
-          <Card.Link
-            className="grayText"
-            target="blank"
-            href={props.deployedLink}
-          >
-            Deployed App or Walkthrough Video
-          </Card.Link>
-        </Button>
-        <Button className="ml-2">
-          <Card.Link
-            className="grayText"
-            target="blank"
-            href={props.gitHubLink}
-          >
-            GitHub Repository
-          </Card.Link>
-        </Button>
+      <Card.Body className="portfolioBtns">
+        <Row>
+          <Button className="projectBtn mr-2">
+            <Card.Link
+              className="grayText"
+              target="blank"
+              href={props.deployedLink}
+            >
+              App/Walkthrough
+            </Card.Link>
+          </Button>
+          <Button className="projectBtn ml-2">
+            <Card.Link
+              className="grayText"
+              target="blank"
+              href={props.gitHubLink}
+            >
+              GitHub Repository
+            </Card.Link>
+          </Button>
+        </Row>
       </Card.Body>
     </Card>
   );

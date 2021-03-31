@@ -3,7 +3,6 @@ import { Form, Card, Button, Row, Modal } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import "../styles/Contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import backgroundImage from "../Images/tree_picture.png";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
 import { Redirect } from "react-router";
 
