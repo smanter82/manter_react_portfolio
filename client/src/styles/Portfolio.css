@@ -41,7 +41,7 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
   }
-  body {
+  .portfolioPage body {
     display: inline;
   }
 }
