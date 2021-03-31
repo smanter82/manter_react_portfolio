@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Form, Card, Button, Row, Modal } from "react-bootstrap";
 import Navbar from "../components/Navbar";
+import { Redirect } from "react-router";
+import { Animated } from "react-animated-css";
 import "../styles/Contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
-import { Redirect } from "react-router";
 
 export default function Contact() {
   const [refresh, setRefresh] = useState();
@@ -54,7 +55,13 @@ export default function Contact() {
           <Card className="mx-auto my-2 " style={{ width: "90%" }}>
             <Card.Body className="grayCard d-flex justify-content-center">
               <Card.Title>
-                <h1>Contact Me:</h1>
+                <Animated
+                  animationIn="rubberBand"
+                  animationOut="fadeOut"
+                  isVisible={true}
+                >
+                  <h1>Contact Me:</h1>
+                </Animated>
               </Card.Title>
             </Card.Body>
             <Card.Body className="d-flex justify-content-center">

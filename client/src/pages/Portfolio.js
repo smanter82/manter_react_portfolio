@@ -6,10 +6,10 @@ import homePage from "../Images/Screenshots/homePage.png";
 import HikerHelper from "../Images/Screenshots/hikerHelper_screenshot2.png";
 import NoteTaker from "../Images/Screenshots/homeScreenshotNoteTaker.png";
 import WeatherDashboard from "../Images/Screenshots/weatherDashSS.png";
-// import portBackgroundImage from "../Images/tree_picture.png";
+
 import Navbar from "../components/Navbar";
 import EmployeeTracker from "../Images/Screenshots/addDepScreen.png";
-// import { Animated } from "react-animated-css";
+import { Animated } from "react-animated-css";
 import ProjectCard from "../components/ProjectCard";
 import { Container } from "react-bootstrap";
 
@@ -82,25 +82,25 @@ export default function Portfolio() {
   return (
     <div className="portfolioPage">
       <Navbar></Navbar>
-      <Container className="portfolioContainer d-flex">
-        {cardInfo.map((info) => (
-          // <Animated
-          //   animationIn="fadeIn"
-          //   animationOut="fadeOut"
-          //   isVisible={true}
-          // >
-          <ProjectCard
-            key={info.id}
-            body={info.body}
-            technologies={info.technologies}
-            title={info.title}
-            deployedLink={info.deployedLink}
-            gitHubLink={info.gitHubLink}
-            photo={info.photo}
-          ></ProjectCard>
-          // </Animated>
-        ))}
-      </Container>
+      <Animated
+        animationIn="bounceInLeft"
+        animationOut="fadeOut"
+        isVisible={true}
+      >
+        <Container className="portfolioContainer d-flex">
+          {cardInfo.map((info) => (
+            <ProjectCard
+              key={info.id}
+              body={info.body}
+              technologies={info.technologies}
+              title={info.title}
+              deployedLink={info.deployedLink}
+              gitHubLink={info.gitHubLink}
+              photo={info.photo}
+            ></ProjectCard>
+          ))}
+        </Container>
+      </Animated>
     </div>
   );
 }
