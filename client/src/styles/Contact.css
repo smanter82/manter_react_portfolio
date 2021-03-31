@@ -37,6 +37,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .contactBtn {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
 }
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1025px) {

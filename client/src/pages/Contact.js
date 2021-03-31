@@ -76,7 +76,7 @@ export default function Contact() {
               </Card.Text>
             </Card.Body>
             <Card.Body className="contactBtns d-flex justify-content-center">
-              <Button className="btn mx-5">
+              <Button className="contactBtn btn mx-5">
                 <Card.Link
                   className="grayText"
                   target="blank"
@@ -85,12 +85,12 @@ export default function Contact() {
                   LinkedIn Profile.
                 </Card.Link>
               </Button>
-              <Button className="btn mx-5">
+              <Button className="contactBtn btn mx-5">
                 <Card.Link className="grayText" target="blank" href={Resume}>
                   My Resume
                 </Card.Link>
               </Button>
-              <Button className="btn mx-5">
+              <Button className="contactBtn btn mx-5">
                 <Card.Link
                   className="grayText"
                   target="blank"
