@@ -1,13 +1,5 @@
-.linksRight {
-  justify-content: flex-end;
-}
-
 .padText {
   padding: 25px;
-}
-
-.card {
-  background-color: rgba(245, 245, 245, 0.5);
 }
 
 p,
@@ -22,10 +14,6 @@ h5 {
   border: 2px rgb !important;
 }
 
-.portfolioPage {
-  background-image: url("../Images/tree_picture.png");
-}
-
 .portfolioContainer {
   display: flex;
   flex-direction: row;
@@ -36,14 +24,11 @@ h5 {
 /* Small devices */
 @media only screen and (max-width: 1024px) {
   .portfolioPage {
-    background-image: url(../Images/mountainView2.png);
+    background-image: url(../Images/tree_picture2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  /* body {
-    display: inline;
-  } */
 }
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1025px) {

@@ -30,7 +30,7 @@ i {
 /* Small devices */
 @media only screen and (max-width: 1024px) {
   .homePage {
-    background-image: url(../Images/mountainView2.png);
+    background-image: url(../Images/tree_picture2.png);
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
