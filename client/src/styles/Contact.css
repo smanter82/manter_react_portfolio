@@ -25,9 +25,30 @@
   font-weight: bold;
 }
 
-.contactPage {
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Make contact page responsive 
+Background image
+Contact Card
+Buttons */
+
+/* Small devices */
+@media only screen and (max-width: 1024px) {
+  .contactPage {
+    background-image: url(../Images/tree_picture2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contactBtns {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1025px) {
+  .contactPage {
+    background-image: url(../Images/tree_picture.png);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
 }

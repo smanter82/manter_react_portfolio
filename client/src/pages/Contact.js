@@ -49,12 +49,7 @@ export default function Contact() {
 
   return (
     <>
-      <div
-        className="contactPage"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-        }}
-      >
+      <div className="contactPage">
         <Navbar></Navbar>
         <Row>
           <Card className="mx-auto my-2 " style={{ width: "90%" }}>
@@ -74,14 +69,14 @@ export default function Contact() {
                 </Row>
               </Card.Text>
             </Card.Body>
-            <Card.Body className="d-flex justify-content-center">
+            <Card.Body className="contactBtns d-flex justify-content-center">
               <Button className="btn mx-5">
                 <Card.Link
                   className="grayText"
                   target="blank"
                   href="https://www.linkedin.com/in/sarahmanter/"
                 >
-                  Here is my LinkedIn Profile.
+                  LinkedIn Profile.
                 </Card.Link>
               </Button>
               <Button className="btn mx-5">
@@ -95,7 +90,7 @@ export default function Contact() {
                   target="blank"
                   href="https://github.com/smanter82/"
                 >
-                  Here is my GitHub Repository.
+                  GitHub Repository.
                 </Card.Link>
               </Button>
             </Card.Body>
