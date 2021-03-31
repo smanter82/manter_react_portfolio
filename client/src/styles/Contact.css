@@ -25,11 +25,6 @@
   font-weight: bold;
 }
 
-/* Make contact page responsive 
-Background image
-Contact Card
-Buttons */
-
 /* Small devices */
 @media only screen and (max-width: 1024px) {
   .contactPage {

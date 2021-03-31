@@ -60,7 +60,7 @@ export default function Contact() {
             </Card.Body>
             <Card.Body className="d-flex justify-content-center">
               <Card.Text>
-                <h2 className="mb-3">
+                <h2 className="mb-3 text-center">
                   Please contact me at any time. I'd love to chat!
                 </h2>
                 <Row className="d-flex justify-content-center">
