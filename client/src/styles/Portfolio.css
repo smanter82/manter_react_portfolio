@@ -41,9 +41,9 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
   }
-  .portfolioPage body {
+  /* body {
     display: inline;
-  }
+  } */
 }
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1025px) {

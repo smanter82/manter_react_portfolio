@@ -32,11 +32,9 @@ i {
   .homePage {
     background-image: url(../Images/mountainView2.png);
     background-size: cover;
-    background-position: center;
+    background-position: top left;
     background-repeat: no-repeat;
-  }
-  .homePage body {
-    display: inline;
+    display: inline-block;
   }
 }
 
