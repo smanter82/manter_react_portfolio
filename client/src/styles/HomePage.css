@@ -27,22 +27,24 @@ i {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 640px and up) */
-@media only screen and (max-width: 991px) {
+/* Small devices */
+@media only screen and (max-width: 1024px) {
   .homePage {
-    background-image: url(../Images/wallpaper2you_188587.png);
+    background-image: url(../Images/mountainView2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 0;
+  }
+  body {
+    display: flex;
   }
 }
 
 /* Large devices (laptops/desktops, 1024px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1025px) {
   .homePage {
     background-image: url(../Images/tree_picture.png);
-    background-size: stretch;
+    background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
   }
