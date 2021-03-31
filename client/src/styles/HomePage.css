@@ -36,7 +36,7 @@ i {
     background-repeat: no-repeat;
   }
   .homePage body {
-    display: flex;
+    display: inline;
   }
 }
 
