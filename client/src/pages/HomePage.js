@@ -39,9 +39,10 @@ export default function HomePage() {
                       with a Masters of Arts in Teaching Secondary English. I
                       spent 13 years teaching middle school Language Arts, but
                       now it is time for a change. I have always enjoyed working
-                      with computers. I am taking a coding course through UNH,
-                      and now I look forward to using that passion in the world
-                      of Web Design.
+                      with computers. I have recently completed a coding
+                      bootcamp through UNH. It was an amazing experience, and
+                      now I look forward to using my passion and the coding
+                      skills I've learned in the world of Web Programming.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -72,10 +73,10 @@ export default function HomePage() {
                     <Card.Text>
                       I am the mother of amazing twins. While they take up a lot
                       of time and energy, they have been super supportive of my
-                      quest to dive into Web Development. They stay out of my
-                      hair as much as they can while I'm doing homework, and my
-                      daughter even practices learning to code on her own
-                      computer next to me while I study.
+                      quest to dive into Web Development. They've stayed out of
+                      my hair as much as they can while I've been doing
+                      homework, and my daughter even practices learning to code
+                      or type on her own computer next to me while I work.
                     </Card.Text>
                   </Card.Body>
                 </Card>
