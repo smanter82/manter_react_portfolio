@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Form, Card, Button, Row, Modal } from "react-bootstrap";
 import Navbar from "../components/Navbar";
+import { Redirect } from "react-router";
+import { Animated } from "react-animated-css";
 import "../styles/Contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import backgroundImage from "../Images/tree_picture.png";
 import Resume from "../Images/Sarah_Manter_Resume.pdf";
-// import AlertModal from "../components/AlertModal";
-import { Redirect } from "react-router";
 
 export default function Contact() {
   const [refresh, setRefresh] = useState();
@@ -50,23 +49,24 @@ export default function Contact() {
 
   return (
     <>
-      <div
-        className="contactPage"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-        }}
-      >
+      <div className="contactPage">
         <Navbar></Navbar>
         <Row>
           <Card className="mx-auto my-2 " style={{ width: "90%" }}>
             <Card.Body className="grayCard d-flex justify-content-center">
               <Card.Title>
-                <h1>Contact Me:</h1>
+                <Animated
+                  animationIn="rubberBand"
+                  animationOut="fadeOut"
+                  isVisible={true}
+                >
+                  <h1>Contact Me:</h1>
+                </Animated>
               </Card.Title>
             </Card.Body>
             <Card.Body className="d-flex justify-content-center">
               <Card.Text>
-                <h2 className="mb-3">
+                <h2 className="mb-3 text-center">
                   Please contact me at any time. I'd love to chat!
                 </h2>
                 <Row className="d-flex justify-content-center">
@@ -75,28 +75,28 @@ export default function Contact() {
                 </Row>
               </Card.Text>
             </Card.Body>
-            <Card.Body className="d-flex justify-content-center">
-              <Button className="btn mx-5">
+            <Card.Body className="contactBtns d-flex justify-content-center">
+              <Button className="contactBtn btn mx-5">
                 <Card.Link
                   className="grayText"
                   target="blank"
-                  href="https://www.linkedin.com/in/sarah-manter-40881877/"
+                  href="https://www.linkedin.com/in/sarahmanter/"
                 >
-                  Here is my LinkedIn Profile.
+                  LinkedIn Profile.
                 </Card.Link>
               </Button>
-              <Button className="btn mx-5">
+              <Button className="contactBtn btn mx-5">
                 <Card.Link className="grayText" target="blank" href={Resume}>
                   My Resume
                 </Card.Link>
               </Button>
-              <Button className="btn mx-5">
+              <Button className="contactBtn btn mx-5">
                 <Card.Link
                   className="grayText"
                   target="blank"
                   href="https://github.com/smanter82/"
                 >
-                  Here is my GitHub Repository.
+                  GitHub Repository.
                 </Card.Link>
               </Button>
             </Card.Body>

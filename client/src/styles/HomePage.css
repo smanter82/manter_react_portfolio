@@ -17,3 +17,33 @@ i {
 .homeNav {
   background: transparent !important;
 }
+
+@media screen and (max-width: 992) {
+  .profilePic {
+    width: 5rem !important;
+  }
+  .familyPic {
+    width: 5rem !important;
+  }
+}
+
+/* Small devices */
+@media only screen and (max-width: 1024px) {
+  .homePage {
+    background-image: url(../Images/tree_picture2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1025px) {
+  .homePage {
+    background-image: url(../Images/tree_picture.png);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+}

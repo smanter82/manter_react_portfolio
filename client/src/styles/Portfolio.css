@@ -1,13 +1,5 @@
-.linksRight {
-  justify-content: flex-end;
-}
-
 .padText {
   padding: 25px;
-}
-
-.card {
-  background-color: rgba(245, 245, 245, 0.5);
 }
 
 p,
@@ -22,19 +14,28 @@ h5 {
   border: 2px rgb !important;
 }
 
-.portfolioPage {
-  background-image: url("../Images/tree_picture.png");
-}
-
 .portfolioContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.portfolioPage {
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Small devices */
+@media only screen and (max-width: 1024px) {
+  .portfolioPage {
+    background-image: url(../Images/tree_picture2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1025px) {
+  .portfolioPage {
+    background-image: url(../Images/tree_picture.png);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
 }
