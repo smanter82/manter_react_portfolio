@@ -44,5 +44,3 @@ Contact me through GitHub or by email.
 ## Resume
 
 Resume: [PDF](/src/Images/Sarah_Manter_Resume.pdf)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
